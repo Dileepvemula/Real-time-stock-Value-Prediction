@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="gallery-bg">
+  <!--head part of website -->
+  <head>
+    <!--Character set of webpage -->
+    <meta charset="utf-8">
+    <!--Title of page specified here -->
+    <title>Original</title>
+    <!--CSS file linked here to html file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media = "screen" href="../css/style.css">
+    <link rel="stylesheet" type ="text/css" media="print" href="../css/print.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../javascript/suggestions.js"></script>
+  </head>
+  <!--Body part of html file starts here -->
+  <body>
+    <!-- Header part of page-->
+    <header>
+      <!--Navigation bar is set as new division and started here -->
+      <div id = "navbar">
+        <!--Nav bar menu items -->
+        <ul>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="../index.html">About Me</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="main.html">Home</a></li>
+        </ul>
+      </div>
+      <!--Header closed here -->
+      </header>
+
+    <!--Footer part of website starts here -->
+    <footer>
+      <div id="footer">
+        <!--Menu elements of footer -->
+        <ul>
+          <li><a href="sourcelog.html">Source Log</a></li>
+          <li><a href="validation.html">Validation</a></li>
+          <li><a href="socialfeed.html">SE Feeds</a></li>
+          <li><a href="imagemap.html">Image Map</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+        </ul>
+      </div>
+    <!--footer tag closed here -->
+    </footer>
+    <div class="main">
+        <h1 class="h1-main">Similar Stocks</h1>
+        <hr>
+        </div>
+    <!-- Division for user search container row-->
+    <div class="row no-gutters">
+        <!-- Division for each column-->
+        <div class="col no-gutters">
+          <!--Division for left col -->
+          <div class="left">
+            <p class="txt"><b>Please enter a stock name: </b></p>
+            <!--Imputs types -->
+            <input type="text" name="mySearch" placeholder="Enter Stock" id="stock">
+            
+            <p class = "txt"><b>Please select a date: </b></p>
+            <input type="date" name="myDateTime" id="date1">
+            <br><br>
+            <input type="button" name="submit" value="Get Info" onclick="getValues();" id="getinfo">
+          </div>
+        </div>
+        <!-- Division for column 2-->
+        <div class="col no-gutters">
+          <!--Division for right col -->
+          <div class="right">
+            <p><b>These are top 6 stocks matching the search key:</b> </p>
+            <ul>
+              <li id="name1"></li>
+              <li id="name2"></li>
+              <li id="name3"></li>
+              <li id="name4"></li>
+              <li id="name5"></li>
+              <li id="name6"></li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+
+    <!--body tag closed here -->
+    </body>
+  <!--html tag closed here -->
+  </html>

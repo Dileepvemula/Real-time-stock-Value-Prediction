@@ -1,0 +1,544 @@
+/* Ensures the background color is set to required one and no margin for body, position is relative*/
+body {
+	background-color: #FFEFFF;
+	margin: 0;
+	border: 20px;
+	font-size: 110%;
+  padding-bottom: 100px;
+  position: relative;
+  background-image: url(../images/bg.png) ; 
+}
+
+/*Removes background images for these pages*/
+.about-bg body, .sitemap-bg body, .imagemap-bg body, .sourcelog-bg body, .gallery-bg body{
+  background-image: none;
+}
+
+/*Sets bg image for home page body*/
+.main-bg body {
+  background-image: url(../images/bull.png);
+  
+}
+
+
+/* Ensures nav bar has no padding, no list style, no margin and background color is set as required*/
+#navbar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #993333;
+}
+
+/*Ensures each list item is set to float right*/
+#navbar li {
+  float: right;
+}
+
+/*Ensures each link is displayed as block, color is set to required , test alignment is in center,padding is set as required*/
+#navbar li a {
+  display: block;
+  color: #FFEFFF;
+  text-align: center;
+  font-weight: bold;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*Ensures background color and color of link is changing when hovered*/
+#navbar li a:hover {
+  background-color: #FFEFFF;
+  color: black;
+}
+
+/* Ensures footer is set in absolute position and text aligned at center and background color is set as required*/
+#footer ul{
+  list-style-type: none;
+  position: absolute;
+  bottom: 0;
+  width: 96%;
+  background-color: #993333;
+  text-align: center;
+}
+
+/*Ensures footer list elements are set to float right*/
+#footer li {
+  float:right;
+}
+
+/*Ensures each link of list is displayed as block, padding and font-weight are set accordingly*/
+#footer li a {
+  display: block;
+  color: #FFEFFF;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+/*Ensures background color and color of link is changing when hovered*/
+#footer li a:hover {
+  background-color: #FFEFFF;
+  color: black;
+}
+
+/* For Feedback form */
+
+/*Ensures feedback division is set in center also width reduced to half*/
+#feedback {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*Ensures background color of form is set and border radius and color is set as required*/
+#feedback form {
+  background-color: #FFEFFF;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+/* Submit and reset properties set as required */
+#feedback input[type = "submit"], input[type="reset"]{
+  width: 15%;
+  border-radius: 5px;
+  border-color: #993333;
+  font-weight: bold;
+  height: 30px;
+  margin-right: 10px;
+}
+
+
+/*Text area width increased, displayed as block, and border adjusted as required*/
+#feedback textarea {
+  width: 90%;
+  height: 2.5em;
+  border-color: #993333;
+  border-width: 1px;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Feedback questions moved to right to match with text areas*/
+#feedback label{
+  padding-left:4.5%;
+  text-align: left;
+}
+
+/* For sitemap*/
+/*Ensures h1 is aligned at center*/
+#sitemap h1, .contact-h1{
+  text-align: center;
+}
+
+/*Ensures width is reduced to 80% and set in center*/
+#sitemap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-bottom: 8.5%;
+}
+
+/*Makes the table span the width of the page and formats the table for easier readability*/
+#sitemap_table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 18px;
+}
+
+/*Ensures separation and proper formatting between each element within the table*/
+#sitemap_table td {
+  padding: 15px;
+  text-align: center;
+}
+
+/*Ensures headings are clearly visible and aligned properly*/
+#sitemap_table th {
+  padding: 15px;
+  font-weight:bold;
+  text-align: center;
+}
+
+/*Allows the user to interact with the referenced website links by placing a colour over the link in which the user is hovering over*/
+#sitemap_table a:hover , .imap a:hover{
+  color:red;
+}
+
+/*Ensures there is no text decoration and link color is set to blue*/
+#sitemap_table a, .imap a{
+  text-decoration: none;
+  color: blue;
+}
+
+/*Height of horizontal line is increased and color changed*/
+hr, .hr{
+  height: 2px;
+  background-color: #993333;
+}
+
+/* For Sourcelog*/
+/*Ensures heading is centred*/
+#source_log h1 {
+  text-align: center;
+}
+
+/*Ensures log is set in center and width reduced to 80%*/
+#source_log {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+  
+/*Makes the table span the width of the page and formats the table for easier readability*/
+#source_log_table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 18px;
+}
+
+/*Ensures separation and proper formatting between each element within the table*/
+#source_log_table td {
+  border: 2px solid #993333;
+  padding: 15px;
+  text-align: left;
+}
+
+/*Ensures headings are clearly visible and aligned properly*/
+#source_log_table th {
+  border: 2px solid #993333;
+  padding: 15px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/*Color of links changes when hovered*/
+#source_log_table a:hover {
+  color:red;
+}
+
+/*Ensures no decoration for links and color is black*/
+#source_log_table a{
+  text-decoration: none;
+  color: black;
+}
+
+/*Creates separation between the table and the next element on the page*/
+#source_log_table {
+  overflow-x: auto;
+  border: 3px solid black;
+}
+
+/* For Index page*/
+/*Ensures below properties of h1 are set*/
+h1{
+  color: black;
+  font-weight: bold;
+  font-size: 36px;
+  padding-left: 10px;
+}
+
+/*Ensures below properties of h2 are set*/
+h2{
+  color:#993333;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/*Ensures below properties of h3 are set*/
+h3{
+  font-weight:normal;
+  font-size: 20px;
+}
+
+
+/*padding proprties of introduction divison are set and line gap increased*/
+#introduction {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  line-height: 25px;
+}
+
+/* my image is resized and displayed as a block*/
+#my_picture img{
+  width: 12.5%;
+  height: 17.5%;
+  display: block;
+  margin-left:10%;
+  margin-right:90%;
+}
+
+/*cricket image is resized and border is adjusted*/
+#cricket img {
+  width: 30%;
+  height: 15%;
+  display: block;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+/*bottom padding at cricket image*/
+#cricket {
+  padding-bottom: 15px;
+}
+
+/*resize of biryani image and border radius changed*/
+#biryani img{
+  width: 30%;
+  height: 15%;
+  display: block;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+/*bottom padding below biryani image*/
+#biryani {
+  padding-bottom: 15px;
+}
+
+/*resize of chai image and border radisu changed*/
+#chai img{
+  width: 30%;
+  height: 150%;
+  display: block;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+/*padding bottom below chai image*/
+#chai {
+  padding-bottom: 15px;
+}
+
+/*padding set for likes division and line gap increased for text*/
+#likes {
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 25px;
+}
+
+/*padding set for passion division and line height increased*/
+#passion {
+  padding-left: 20px;
+  padding-right:20px;
+  line-height: 25px;
+}
+
+/*padding set for mission division and line gap increased*/
+#mission {
+  padding-left: 20px;
+  padding-right:20px;
+  padding-bottom: 50px;
+  line-height: 25px;
+}
+
+/*For contact Us page*/
+/*Ensures Contact table text is aligned to center*/
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 18px;
+}
+
+/*Ensures the contact page is aligned to center*/
+.contact {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 8.5%;
+  
+}
+
+/*Ensures each item description is aligned to center with extra top padding*/
+.contact-table td {
+  padding: 15px;
+  text-align: center;
+  padding-top: 1px;
+}
+
+/*Ensures table header is aligned to center and padding 15 px and font weight to bold*/
+.contact-table th {
+  padding: 15px;
+  font-weight:bold;
+  text-align: center;
+}
+
+/*Ensures each row has padding*/
+.contact-table tr {
+  padding: 5px;
+}
+
+/*Ensures the image is moved to center and width, height reduced*/
+.img2 {
+  width: 25%;
+  height: 8%;
+  display: block;
+  padding: 15px;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Ensures image is changed and moved to center*/
+.img1 {
+  width: 20.5%;
+  height: 5%;
+  display: block;
+  padding: 15px;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* For Home Page*/
+/*Ensures the divisions are of .95 vh, border changed and position changed*/
+.left, .right {
+  height: 95%;
+  width: 95%;
+  border: 2px solid #993333;
+  padding: 5px;
+  border-radius: 2px; 
+  margin: 2px;
+  position: relative;
+  top: 20px;
+  left: 10px;
+  
+}
+
+/* Ensures text is aligned to center*/
+.h1-main, .h1-gallery{
+  text-align: center;
+}
+
+/*Ensures the main is a little below*/
+.main {
+  position: relative;
+  top: 20px;
+}
+
+/*Ensures padding from all sides*/
+.main p {
+  padding-left: 200px;
+  padding-top: 2px;
+  padding-right: 200px;
+  padding-bottom: 0px;
+  
+}
+
+/*Ensures the image os moved to right and edges rounded with 50% width*/
+.mrkt {
+  width: 50%;
+  position: relative;
+  left: 320px;
+  border-radius: 10px;
+}
+
+/*Ensures the image is moved to right with a width of 500px*/
+.mrkt-open {
+  width: 500px;
+  position: relative;
+  left: 400px;
+  border-radius: 10px;
+
+}
+
+/*Ensures the caption is moved to right*/
+.caption {
+  position: relative;
+  left: 280px;
+}
+
+/*Ensures  input button changed color, text to bold and border as required*/
+input[type = "button"]{
+  width: 15%;
+  border-radius: 5px;
+  border-color: #993333;
+  font-weight: bold;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/*Ensures h1 is aligned to center*/
+.h1-imap {
+  text-align: center;
+}
+
+/*Ensures the image is at center*/
+.imap-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Ensures the paragrapg is padded well and moved to right*/
+.caption2 {
+  position: relative;
+  left: 80px;
+  padding-left: 100px;
+  padding-right: 300px;
+  margin: 0px;
+}
+
+/* Ensures the lists are moved to right and are relatively placed*/
+.imap ul, .imap li {
+  position: relative;
+  left: 80px;
+}
+
+/*Increases width of all inputs*/
+#getinfo , #stock, #date1{
+  width: 200px;
+}
+
+/*Moves inputs to right*/
+#getinfo , #stock, #date1, .txt {
+  position: relative;
+  left: 150px;
+  
+}
+
+/* Social media buttons*/
+/*Sets text features for buttons*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/*Sets bg for facebook button*/
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/*Sets bg for twitter button*/
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/*Sets bg for linkedin button*/
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+/*padding for reflection*/
+.reflection {
+  padding-left: 5mm;
+  padding-right: 5mm;
+}
